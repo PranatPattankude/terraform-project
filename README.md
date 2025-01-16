@@ -59,8 +59,18 @@ This project demonstrates the setup of a simple AWS VPC-based infrastructure usi
    ```bash
    terraform init
 
+2. **Review and validate the configuration**:
+   ```bash
+   terraform plan
 
-## Usage
+3. **Apply the configuration to deploy resources**:
+   ```bash
+   terraform apply
+
+4. **Note the output values for accessing the EC2 instance and application**.
+
+
+## To clone this
 1. Clone this repository:
    ```bash
    git clone <repository_url>
