@@ -54,6 +54,13 @@ This project demonstrates the setup of a simple AWS VPC-based infrastructure usi
 - Sufficient IAM permissions to create resources in AWS.
 
 ## Usage
+
+1. **Initialize Terraform**:
+   ```bash
+   terraform init
+
+
+## Usage
 1. Clone this repository:
    ```bash
    git clone <repository_url>
