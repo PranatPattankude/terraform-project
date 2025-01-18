@@ -73,6 +73,6 @@ This project demonstrates the setup of a simple AWS VPC-based infrastructure usi
 ## To clone this
 1. Clone this repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/PranatPattankude/terraform-project.git
+   cd terraform-project
 
