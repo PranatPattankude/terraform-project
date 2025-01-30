@@ -23,7 +23,7 @@ variable "sg_cidr" {
 
 variable "ingress_port" {
   type = list(number)
-  default = [ 22, 80 ]
+  default = [ 22, 80, 8080 ]
 }
 
 variable "egress_port" {
