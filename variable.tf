@@ -11,22 +11,22 @@ variable "pub_sub" {
   }
 }
 
-variable "RT-cidr" {
+variable "RT_cidr" {
   description = "cidr for route table"
   default = "0.0.0.0/0"
 }
 
-variable "sg-cidr" {
+variable "sg_cidr" {
   description = "cidr for securiy group"
   default = ["0.0.0.0/0"]
 }
 
-variable "ingress-port" {
+variable "ingress_port" {
   type = list(number)
   default = [ 22, 80 ]
 }
 
-variable "egress-port" {
+variable "egress_port" {
   type = list(number)
   default = [ 0 ]
 }

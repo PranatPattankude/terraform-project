@@ -5,5 +5,5 @@ output "instance_ip" {
 
 output "instance_ip_url" {
   description = "Public Url of Instance"
-  value = "https://${aws_instance.AppServer.public_ip}"
+  value = "http://${aws_instance.AppServer.public_ip}"
 }
