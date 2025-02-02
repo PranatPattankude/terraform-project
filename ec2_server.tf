@@ -13,17 +13,10 @@ resource "aws_instance" "AppServer" {
 
   user_data = base64encode(<<-EOF
   #!/bin/bash
-  sudo apt update -y
-  sudo apt install -y fontconfig openjdk-17-jre
-  sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian/jenkins.io-2023.key
-  echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
-  sudo apt-get update
-  sudo apt-get install -y jenkins
-  sudo systemctl start jenkins
-  sudo systemctl enable jenkins
-  sleep 10
-  JENKINS_PASSWORD=$(sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
-  echo $JENKINS_PASSWORD > /tmp/jenkins_password.txt
+  sudo apt-get update -y
+  sudo apt-get install -y apache2
+  sudo systemctl start apache2
+  sudo systemctl enable apache2
   EOF
 )
 
